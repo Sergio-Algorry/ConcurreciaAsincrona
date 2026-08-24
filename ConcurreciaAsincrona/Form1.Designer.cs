@@ -33,6 +33,7 @@
             pictureBox1 = new PictureBox();
             button1 = new Button();
             button2 = new Button();
+            btImagenes = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -77,11 +78,23 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // btImagenes
+            // 
+            btImagenes.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            btImagenes.Location = new Point(502, 278);
+            btImagenes.Name = "btImagenes";
+            btImagenes.Size = new Size(134, 53);
+            btImagenes.TabIndex = 4;
+            btImagenes.Text = "Imagenes";
+            btImagenes.UseVisualStyleBackColor = true;
+            btImagenes.Click += btImagenes_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(706, 450);
+            Controls.Add(btImagenes);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(pictureBox1);
@@ -98,5 +111,6 @@
         private PictureBox pictureBox1;
         private Button button1;
         private Button button2;
+        private Button btImagenes;
     }
 }

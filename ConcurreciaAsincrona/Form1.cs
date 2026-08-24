@@ -81,5 +81,10 @@ namespace ConcurreciaAsincrona
             Console.WriteLine($"demora: {sw.ElapsedMilliseconds} ms");
             pictureBox1.Visible = false;                  //1
         }
+
+        private void btImagenes_Click(object sender, EventArgs e)
+        {
+            new frmImagenes().Show();
+        }
     }
 }
